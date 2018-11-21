@@ -1,0 +1,8 @@
+<h1><%= @restaurant.name%></h1>
+
+<h3><%=@restaurant.address %></h3>
+
+<%@restaurant.reviews.each do |review|%>
+<p><%= review.content%></p>
+<p><%= review.rating %></p>
+<% end %>
